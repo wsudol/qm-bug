@@ -1,0 +1,13 @@
+---
+applications:
+- memory: 128M
+  instances: 1
+  name: NodeHelloWorld
+  path: .
+  command: node app.js
+- services:
+  - sample-airport-wait-times
+declared-services:
+  sample-airport-wait-times:
+    label: Airport Wait Times
+    plan: "Airport Wait Times v1 : Sandbox"
